@@ -3,6 +3,7 @@
 */
 
 #include <iostream>
+#include <typeinfo>
 using namespace std;
 
 void show(int output){
@@ -13,8 +14,7 @@ int main(){
 
     // array init
     int my_array[] = {1, 2, 3, 4, 5};
-    int n[] = {10, 20, 30};
-    int * pointer = n;
+    int * pointer = my_array;
 
     // array iteration
     for (int i = 0; i < 5; i++) {
@@ -22,6 +22,11 @@ int main(){
     }
 
     show(pointer[1]);
+
+
+
+
+    
     
     return 0;
 }
