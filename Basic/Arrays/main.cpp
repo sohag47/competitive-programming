@@ -5,15 +5,23 @@
 #include <iostream>
 using namespace std;
 
+void show(int output){
+    cout << output << endl;
+}
 
 int main(){
 
     // array init
-    int my_array[5] = {1, 2, 3, 4, 5};
+    int my_array[] = {1, 2, 3, 4, 5};
+    int n[] = {10, 20, 30};
+    int * pointer = n;
 
     // array iteration
     for (int i = 0; i < 5; i++) {
-        cout << my_array[i] << endl;
+        show(my_array[i]);
     }
+
+    show(pointer[1]);
+    
     return 0;
 }
