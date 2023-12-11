@@ -5,3 +5,18 @@
 3. Abstract or User-Defined Data Types: [Class, Structure, Union, Enumeration, Typedef defined Datatype]
 
 */
+
+#include<iostream>
+using namespace std;
+
+void output()
+{
+    cout << "Hello World";
+}
+
+int main()
+{
+    output();
+    return 0;
+}
+
